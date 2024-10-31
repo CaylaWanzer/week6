@@ -137,11 +137,11 @@
 // }
 
 
-let kids = [
-    { first : "Natalie", last : "Plyers" },
-    { first: "Brittany", last: "Ray" },
-    { first: "Zachary", last: "Westly" }
-];
+// let kids = [
+//     { first : "Natalie", last : "Plyers" },
+//     { first: "Brittany", last: "Ray" },
+//     { first: "Zachary", last: "Westly" }
+// ];
 
 // function displayKids(name){
 //     console.log(name.first + " " + name.last);
@@ -154,10 +154,64 @@ let kids = [
 // kids.forEach(displayfirst)
 
 
-function display(name){
-    console.log(name.last)
+// function display(name){
+//     console.log(name.last)
+// }
+// kids.forEach(display)
+
+// let numbers = [300, 150, 25];
+//  function getSum(currentTotal, value){
+//     return currentTotal + value;
+//  }
+// let sum = numbers.reduce ((currentTotal, value)=> currentTotal + value ,0)
+
+
+
+// console.log(sum)
+
+
+
+
+// let numbers2 = [800, 150, 75];
+
+// let sum2 = numbers2.reduce((current, value) => current + value, 2)
+// console.log(sum2)
+
+
+// let numbers = [100, 50, 70];
+// let sum = numbers.reduce((total , vlaue2) => total+vlaue2, 0)
+// console.log(sum)
+
+
+let addOnOptions = [
+        {item: "A/C", price: 1019.00},
+        {item: "Sunroof", price: 699.99},
+        {item: "Mud flaps", price: 299.49},
+        {item: "Heated seats", price: 1199.99},
+        {item: "AM/FM Stereo w/ cassette player", price: 199.00}
+    ];
+    // let oneCheapOption =
+    //     addOnOptions.find((arrayValue) => arrayValue.price < 500);
+
+    //         if (oneCheapOption != undefined) {
+    //         console.log(oneCheapOption.item +
+    //         " $" + oneCheapOption.price);
+    //         }
+    //         else {
+    //         console.log("No options under $500");
+    //         }
+
+let oneCheapOption = 
+addOnOptions.find((value) => value.price < 800);
+
+if (oneCheapOption != undefined){
+    console.log(oneCheapOption.item + 
+        "$" + oneCheapOption.price);
+    
+}else{
+    console.log("nothing under 500")
 }
-kids.forEach(display)
+
 
 
 

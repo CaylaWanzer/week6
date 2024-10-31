@@ -1,0 +1,52 @@
+<body>
+    <h1>Web Demo</h1>
+    <h2>Basket Ball Teams</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Rank</th>
+            </tr>
+    </thead>
+    <tbody id="teamsBody"></tbody>
+    </table>
+</body>
+<script>
+    const teamsList = [
+        {teamName: "Chicago Bulls", rank: 12},
+        {teamName: "Seventy Sixers", rank: 3},
+    ];
+
+function createTeamRow (teamObject){
+    const trTeam = document.createElement("tr");
+
+    const tdTeamName = document.createElement("td");
+    const tdRank = document.createElement("td");
+
+    tdTeamName.innerText = teamObject.teamName;
+    tdRank.innerText = teamObject.rank;
+
+
+    trTeam.appendChild(tdTeamName);
+    trTeam.appendChild(tdRank);
+    
+    teamsBody.appendChild(trTeam);
+
+}
+ teamsList.forEach(createTeamRow);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
